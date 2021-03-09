@@ -1,5 +1,21 @@
-hgroup{
+hgroup {
+    margin: 10px;
+}
+hgroup > h2 {
+    font-family: "Rubik", sans-serif;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.popdest {
     text-align: center;
+}
+
+hgroup > h3 {
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: grey;
 }
 
 .popular {
@@ -9,40 +25,137 @@ hgroup{
     grid-template-areas: 
     'italy brazil america'
     'nepal maldives indonesia';
+    gap: 20px;
+    margin: 10px;
 }
+
+.destination {
+    height: 200px;
+    width: 100%;
+}
+
+.destination > p {
+    padding-top: 150px;
+    padding-left: 20px;
+}
+
 
 #italy {
     background-image: url(../img/destination/italy.png);
     grid-area: italy;
-    margin: 10px
 }
 
 #brazil {
     background-image: url(../img/destination/brazil.png);
     grid-area: brazil;
-    margin: 10px
 }
+
 
 #america {
     background-image: url(../img/destination/america.png);
     grid-area: america;
-    margin: 10px;
 }
+
 
 #nepal {
     background-image: url(../img/destination/nepal.png);
     grid-area: nepal;
-    margin: 10px
 }
 
 #maldives {
     background-image: url(../img/destination/maldives.png);
     grid-area: maldives;
-    margin: 10px
 }
 
 #indonesia {
     background-image: url(../img/destination/indonesia.png);
     grid-area: indonesia;
-    margin: 10px
 }
+
+.popular-places {
+    display: grid;
+    grid-template-areas:
+    'california korola-megna london'
+    'california-name korola-name london-name'
+    'miami-beach california-2 saintmartine'
+    'miami-name california-2-name saintmartine-name';
+    gap: 20px;
+    margin: 10px;
+}
+
+.destination-place {
+    height: 200px;
+    width: 100%;
+}
+
+.destination-place >  button {
+    text-decoration: underline;
+}
+
+#california {
+    background-image: url(../img/place/california.png);
+    grid-area: california;
+}
+
+#korola-megna {
+    background-image: url(../img/place/korola_megna.png);
+    grid-area: korola-megna;
+}
+
+#london {
+    background-image: url(../img/place/london.png);
+    grid-area: london;
+}
+
+#miami-beach {
+    background-image: url(../img/place/miami.png);
+    grid-area: miami-beach;
+}
+
+#california-2 {
+    background-image: url(../img/place/california.png);
+    grid-area: california-2;
+}
+
+#saintmartine {
+    background-image: url(../img/place/iceland.png);
+    grid-area: saintmartine;
+}
+
+.destination-name > hgroup > h3 {
+    font-weight: normal;
+    font-size: 20px;
+    text-align: left;
+    text-decoration: underline;
+    color: black;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.destination-name > hgroup > h4 {
+    font-weight: normal;
+    font-size: 12px;
+    text-align: left;
+    color: grey;
+    margin-top: 0;
+}
+
+#california-name {
+    grid-area: california-name;
+}
+#korola-name {
+    grid-area: korola-name;
+}
+#london-name {
+    grid-area: london-name;
+}
+#miami-name {
+    grid-area: miami-name;
+}
+#california-2-name {
+    grid-area: california-2-name;
+}
+#saintmartine-name {
+    grid-area: saintmartine-name;
+}
+

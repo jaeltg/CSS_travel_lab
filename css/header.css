@@ -1,6 +1,7 @@
 
   .main-nav {
     display: flex;
+    flex-flow: row wrap;
     background-color: #4584b1;
   }
   .main-nav li:first-child {
